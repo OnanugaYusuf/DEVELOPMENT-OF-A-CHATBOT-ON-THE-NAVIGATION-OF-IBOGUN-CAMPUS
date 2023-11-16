@@ -28,7 +28,7 @@ def destination_time(parameters: dict):
     destination = parameters['nav-direction']
     travel_time = db_helper.handle_user_query(destination)
 
-    if destination:
+    if travel_time:
         fulfillment_text = f"If you're coming from the school gate, it will take you {round(travel_time / 60, 2)} mins to get to the {destination}"
     else:
         fulfillment_text = f"No {destination} found in the database"
