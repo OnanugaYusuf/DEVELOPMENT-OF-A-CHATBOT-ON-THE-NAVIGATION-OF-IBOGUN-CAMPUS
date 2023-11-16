@@ -3,10 +3,11 @@ import mysql.connector
 global cnx
 
 cnx = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="root",
-    database="navbot"
+    DB_HOST="localhost",
+    DB_PORT=3306,
+    DB_USER="root",
+    DB_PASSWORD="root",
+    DB_NAME="navbot"
 )
 
 
