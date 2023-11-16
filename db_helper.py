@@ -1,13 +1,16 @@
 import mysql.connector
+import os
 
-global cnx
+# Define the database configuration using environment variables
+DB_CONFIG = {
+    'host': os.environ.get('DB_HOST', 'localhost'),
+    'user': os.environ.get('DB_USER', 'root'),
+    'password': os.environ.get('DB_PASSWORD', 'root'),
+    'database': os.environ.get('DB_NAME', 'navbot'),
+}
 
-cnx = mysql.connector.connect(
-    DB_HOST="localhost",
-    DB_USER="root",
-    DB_PASSWORD="root",
-    DB_NAME="navbot"
-)
+# Establish a global connection to the database
+cnx = mysql.connector.connect(**DB_CONFIG)
 
 
 def handle_user_query(destination):
@@ -16,8 +19,6 @@ def handle_user_query(destination):
     # Construct the SQL query dynamically based on the user's input
     query = f"SELECT time_seconds FROM nav_nav WHERE destination_name = '{destination}';"
     cursor.execute(query)
-    #query = "SELECT time_seconds FROM nav_data WHERE destination_name LIKE %s;"
-    #cursor.execute(query, ('%' + destination + '%',))
 
     # Fetch the result
     result = cursor.fetchone()
