@@ -24,7 +24,7 @@ section {
 
 @keyframes slideshow {
     0% {
-        background: url(bg1.jpg) no-repeat;
+        background: url(bg.jpg) no-repeat;
         background-size: cover;
         background-position: center;
     }
