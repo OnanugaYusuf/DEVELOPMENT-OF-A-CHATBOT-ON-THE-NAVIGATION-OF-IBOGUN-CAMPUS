@@ -170,7 +170,7 @@ header .navigation a:hover{
     cursor: pointer;
 }
 
-/* Style for the chatbot icon */
+/* Style for the chatbot icon 
 .chat-bot-icon {
     width: 50px; /* Adjust the width as needed */
     height: 50px; /* Adjust the height as needed */
@@ -183,7 +183,7 @@ header .navigation a:hover{
     justify-content: center;
     font-size: 20px; /* Adjust the font size as needed */
 }
-
+*/
 #check{
   z-index: 3;
   display: none;
