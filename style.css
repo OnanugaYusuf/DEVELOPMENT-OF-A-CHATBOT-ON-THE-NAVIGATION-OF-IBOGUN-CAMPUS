@@ -24,27 +24,27 @@ section {
 
 @keyframes slideshow {
     0% {
-        background: url(bg.jpg) no-repeat;
+        background: url(1.jpeg) no-repeat;
         background-size: cover;
         background-position: center;
     }
     25% {
-        background: url(logo.png) no-repeat;
+        background: url(2.jpeg) no-repeat;
         background-size: cover;
         background-position: center;
     }
     50% {
-        background: url(bg3.jpg) no-repeat;
+        background: url(3.jpeg) no-repeat;
         background-size: cover;
         background-position: center;
     }
     75% {
-        background: url(bg4.jpg) no-repeat;
+        background: url(4.jpeg) no-repeat;
         background-size: cover;
         background-position: center;
     }
     100% {
-        background: url(bg1.jpg) no-repeat;
+        background: url(1.jpeg) no-repeat;
         background-size: cover;
         background-position: center;
     }
